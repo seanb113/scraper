@@ -1,0 +1,290 @@
+body {
+  background: #EFEEEE;
+  background-size: 400%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#trade-dropdown {
+  padding-left: 25rem;
+  padding-right: 25rem
+}
+
+#ui-item-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.img.mini-avatar-image {
+  width: 5em;
+  height: 6em;
+  border-radius: 400rem;
+}
+
+.ui-center-dimmer:hover{
+  transition: 'fade down'
+}
+
+#button-example {float: right}
+
+#menuTab {
+  width: 30px;
+  height: 30px;
+  top: 30px;
+}
+
+.ui.form.container{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+}
+
+#tradingCard{
+    background-color: #e7efa7;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f7ffb3, #d0d796);
+    box-shadow:  5px 5px 10px #9e9d9d, 
+    -5px -5px 10px #ffffff;
+}
+
+#teamList{
+  background: #edecec;
+  box-shadow:  -13px -13px 26px #ffffff, 
+               13px 13px 26px #9c9c9c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.ui.multiple.search.dropdown{
+  border-radius: 17px;
+  background: #edecec;
+  box-shadow: inset -5px 5px 10px #8e8e8e, 
+              inset 5px -5px 10px #ffffff;
+              padding-top: .5rem
+}
+
+.ui.multiple.search.dropdown:hover{
+  border-radius: 17px;
+  background: #edecec;
+  box-shadow: inset -5px 5px 10px #8e8e8e, 
+              inset 5px -5px 10px #ffffff;
+}
+
+
+#rosterColumn{
+  background: #edecec;
+  box-shadow:  13px 13px 26px #9c9c9c, 
+               -13px -13px 26px #ffffff;
+               margin-left: 15px;
+               margin-top: 10px;
+               width: 22%
+}
+
+.buttonSpace{
+  padding-right: .3rem
+}
+
+#pickTeamGrid{
+  border: 1px solid rgba(255,255,255,0.20);
+  border-radius: 17px;
+  background: linear-gradient(145deg, #d7d6d6, #ffffff);
+  box-shadow:  5px 5px 10px #605f5f, 
+               -5px -5px 10px #ffffff;
+}
+#pickTeamGrid.or{
+  visibility: hidden;
+}
+
+.ui.left.push.sidebar {
+  border-radius: 17px;
+  background: linear-gradient(45deg, #303030, #292929);
+  box-shadow:  5px -5px 10px #9e9d9d, 
+  -5px 5px 10px #ffffff;
+}
+
+.ui.visible.push.sidebar{
+  border-radius: 17px;
+  background: linear-gradient(45deg, #303030, #292929);
+  box-shadow:  5px -5px 10px #9e9d9d, 
+  -5px 5px 10px #ffffff;
+}
+
+#machineButtonGrid{
+border: 1px solid rgba(255,255,255,0.20);
+border-radius: 17px;
+background: linear-gradient(145deg, #d7d6d6, #ffffff);
+box-shadow:  5px 5px 10px #605f5f, 
+             -5px -5px 10px #ffffff;
+}
+
+#machineButtonGrid:active {
+  border: 1px solid rgba(255,255,255,0.20);
+  border-radius: 17px;
+  background: #efeeee;
+  box-shadow: inset 22px 22px 44px #d9d9d9, 
+              inset -22px -22px 44px #ffffff;
+}
+
+.ui.two.buttons{
+  background: linear-gradient(145deg, #d0d796, #f7ffb3);
+  box-shadow:  17px 17px 33px #cbd293, 
+               -17px -17px 33px #ffffbb;
+}
+
+.ui.labeled.button:not(.icon) {
+  background-color: red
+}
+
+.ui.card>.extra, .ui.cards>.card>.extra {
+  background: linear-gradient(225deg, #d0d796, #f7ffb3);
+  box-shadow:  -14px 14px 0px #5c6043,   
+}
+#menuTab.content.icon::before{
+margin-right: 1rem;
+}
+
+
+
+.ui.celled.list>.item, .ui.celled.list>.list{
+             box-shadow:  5px 5px 10px #edecec, 
+             -5px -5px 10px #f1f0f0;
+}
+
+.ui.celled.list.t>.item, .ui.celled.list.t>.list{
+  background: #e7efa7;
+  box-shadow:  5px 5px 10px #e5eda5, 
+             -5px -5px 10px #e9f1a9;
+}
+
+#loginButton{
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+
+#loginSignupInput{
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 5px -5px 16px #ebebeb, 
+              inset -5px 5px 16px #ffffff;
+}
+
+select.ui.selection.dropdown{
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 5px -5px 16px #ebebeb, 
+              inset -5px 5px 16px #ffffff;
+}
+
+input#password.signingUp{
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 5px -5px 16px #ebebeb, 
+              inset -5px 5px 16px #ffffff;
+}
+
+input#name.signingUp{
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 5px -5px 16px #ebebeb, 
+              inset -5px 5px 16px #ffffff;
+}
+.ui.form input{
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 5px -5px 16px #dedede, 
+              inset -5px 5px 16px #ffffff;
+}
+
+#bottomButtons{
+  padding-bottom: 10rem;
+}
+
+#cardCloseIcon {
+  float: right
+}
+
+#tradeLists{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#signupSubmit {float: center}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden
+}
+
+#sortGrid {
+  display: flex;
+  justify-content: right;
+  color: #b1b1b1;
+  padding-left: 1rem;
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+  margin-left: 5rem;
+  margin-right: 84rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#sortGrid#text {
+  color: #cbcaca
+}
+
+.sortButton {
+  background-color: #424141;
+  background: linear-gradient(145deg, #d7d6d6, #ffffff);
+  box-shadow: inset 3px 3px 6px #cbcaca, 
+            inset -3px -3px 6px #ffffff;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  
+}
+
+#searchAndSort{
+  border-radius: 4px;
+  background: #edecec;
+  box-shadow:  20px 20px 18px #ffffff;
+  border-bottom: solid #b1b1b1;
+               
+  padding-bottom: 0rem;
+}
