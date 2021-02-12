@@ -6,23 +6,12 @@ require 'json'
 begin
     agent = Mechanize.new
     all_response_code = ['403', '404', '502']
-    page = agent.get("https://www.spotrac.com/search/results/dallas-maveric/")
+    page = agent.get("https://www.spotrac.com/search/results/brooklyn-nets/")
     team_pages = page.links_with(:dom_class => "team-name")
     teams = team_pages.map do |link|
         puts "Team done"
         team = link.text
         team_page = link.click
-        # total_cap = team_page.search(".datatable.captotal.xs-visible .tbody").text
-        # puts total_cap
-    #   team_name = team_pages.map do |link|
-    #      team_name = link.text
-    #     end
-    #     team_logo = team_pages.map do |link|
-    #         team_logo = link.click.search('.team-logo img').attr('src')
-    #     end
-    # team_details = team_pages.each_with_index.map do |t, index|
-    #     {name: team_name[index], cap_spent: " ", logo: team_logo[index]}
-    # end
     
     other_players = team_page.links_with(:dom_class => ".tag.player-tag")
     all_players = team_page.links_with(:href => %r{/redirect/player/})
@@ -70,18 +59,11 @@ begin
         {team: team, name: player_names[index], salary: salaries[index], position: position[index], player_image: player_pic[index], signed_using: signed_current_using[index], final_year_of_contract: final_year_of_current[index], trade_clause: trade_clause[index]}
     end
         
-        
-    
-        # {   team: team_details 
         {players: players_details.inject({}) do |r, h| 
             (r[h[:name]] ||= {}).merge!(h){ |key, old, new| old || new }
             r
           end.values
         }
-
-    # players_details = player_names.each_with_index.map do |w, index|
-    #     {team: team, name: player_names[index], salary: salaries[index], player_image: player_pic[index], trade_clause: trade_clause[index]}
-    # end
 
     {players: players_details}
 
@@ -94,5 +76,4 @@ begin
     end
 end
 
-
-puts JSON.pretty_generate(teams)
+puts JSON.pretty_generate(Array.new(teams[0][:players]).uniq { |t| t[:name] })
